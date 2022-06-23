@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prak_Pertemuan6">
         <activity
+            android:name=".SQLiteHelper"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

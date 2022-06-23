@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp"
+        android:text="Menghitung Kerucut"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/ejari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="-71dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginTop="33dp"
+        android:text="Jari-jari" />
+
+    <EditText
+        android:id="@+id/etinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_marginLeft="22dp"
+        android:layout_marginBottom="-124dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10">
+        <requestFocus />
+    </EditText>
+
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginTop="95dp"
+        android:text="Tinggi" />
+
+    <Button
+        android:id="@+id/btnproses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ejari"
+        android:layout_alignLeft="@+id/ejari"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="221dp"
+        android:onClick="myClickHandler"
+        android:text="Proses" />
+
+    <Button
+        android:id="@+id/btnhapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnproses"
+        android:layout_alignBottom="@+id/btnproses"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:onClick="myClickHandler"
+        android:text="Hapus" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eluas"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignBottom="@+id/eluas"
+        android:text="Luas" />
+
+    <EditText
+        android:id="@+id/eluas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnproses"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="380dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/evolume"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignBottom="@+id/evolume"
+        android:text="Volume" />
+
+
+    <EditText
+        android:id="@+id/evolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eluas"
+        android:layout_alignLeft="@+id/eluas"
+        android:layout_marginTop="30dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eselimut"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignBottom="@+id/eselimut"
+        android:text="*Selimut" />
+
+    <EditText
+        android:id="@+id/eselimut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eluas"
+        android:layout_alignLeft="@+id/eluas"
+        android:layout_marginTop="110dp"
+        android:ems="10" />
+
+</RelativeLayout>
